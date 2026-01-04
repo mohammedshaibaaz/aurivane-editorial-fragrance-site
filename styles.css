@@ -190,7 +190,7 @@
       position: relative;
       padding-top: 9rem; /* extra for fixed header */
       padding-bottom: 4rem;
-      background: url("/hero-background.png") right center / cover no-repeat;
+      background: url("./hero-background.png") right center / cover no-repeat;
       background-color: #f7f3ec;
       margin-top: 4rem;
     }
@@ -1355,4 +1355,5 @@
     color: #2e2a25;
   }
 }
+
 
