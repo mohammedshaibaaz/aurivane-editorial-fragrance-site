@@ -16,7 +16,8 @@
 
 <section class="hero">
   <img 
-    src="/lueur-hero.png" 
+    src="./lueur-hero.png" 
+    loading="eager"
     alt="Aurivane — Lueur Blanche" 
     class="hero-media"
   />
@@ -52,7 +53,14 @@
 
   <section class="section section--tight">
     <div class="ritual-media">
-  <video autoplay muted loop playsinline>
+  <video
+  class="ritual-video"
+  muted
+  loop
+  playsinline
+  preload="none"
+  poster="./lueur-hero.png"
+>
     <source src="lueur-ritual.mp4" type="video/mp4" />
   </video>
 </div>
@@ -64,6 +72,6 @@
     <a href="index.html">Return to constellation</a>
     <a href="rose-silencieuse.html">Next chapter →</a>
   </nav>
-
+<script src="aurivane-chapter.js"></script>
 </body>
 </html>
