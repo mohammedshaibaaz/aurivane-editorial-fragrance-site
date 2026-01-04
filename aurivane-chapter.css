@@ -1,0 +1,388 @@
+/* ===============================
+   Aurivane – Editorial Chapter CSS
+   Quiet luxury, exhibition tone
+   =============================== */
+
+:root {
+  --bg-ivory: #f6f3ee;
+  --text-main: #1c1c1c;
+  --text-muted: #6e6a65;
+  --accent: #c8b98a;
+
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Mood overrides (per page) */
+body[data-mood="gold"] {
+  --accent: #d6c38a;
+}
+
+body[data-mood="noctis"] {
+  --accent: #8f8a80;
+  --text-main: #191919;
+}
+
+body[data-mood="blanche"] {
+  --accent: #e6e1d8;
+}
+
+body[data-mood="rose"] {
+  --accent: #d8b2b2;
+}
+
+body[data-mood="opaline"] {
+  --accent: #cfd3d6;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-ivory);
+  color: var(--text-main);
+  font-family: var(--sans);
+  line-height: 1.7;
+}
+
+/* Layout */
+.section {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.fragrance-title {
+  font-size: clamp(3rem, 5vw, 4.2rem);
+  letter-spacing: 0.02em;
+}
+
+.section p {
+  font-size: 1.02rem;          /* slightly smaller */
+  line-height: 1.95;            /* more air */
+  max-width: 38rem;            /* narrower = editorial */
+}
+
+
+.section--tight {
+  padding: 5rem 0; 
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: min(85vh, 720px);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-meta {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+.hero-divider {
+  width: 1px;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 3rem auto;
+}
+
+
+.brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.fragrance {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Narrative */
+.narrative p {
+  margin-bottom: 1.6rem;
+  font-size: 1rem;
+}
+
+/* Olfactive Architecture */
+.architecture {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 3rem;
+}
+
+.architecture h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+.note {
+  margin: 3rem 0;
+  margin-top:  2.5rem;
+}
+
+.note span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  opacity: 0.5;
+}
+
+/* Ritual */
+.ritual-media {
+  width: 68%;
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  margin-bottom: 1rem;
+  margin: 0 auto 3.5rem;
+}
+
+.ritual-caption {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+/* Navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  opacity: 0.6;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.chapter-nav a:hover {
+  color: var(--text-main);
+}
+
+
+.hero {
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ritual-media img,
+.ritual-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-meta {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .brand {
+    font-size: 0.65rem;
+    letter-spacing: 0.32em;
+  }
+
+  .fragrance {
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+    line-height: 2;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .ritual-media {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .ritual-caption {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .chapter-nav {
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    padding: 4rem 0 3rem;
+  }
+
+}
+
+
+/* ===============================
+   RITUAL — DESKTOP (CSS ONLY)
+   =============================== */
+
+.ritual-media {
+  width: 68%;
+  height: 60vh;
+  margin: 0 auto 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ritual-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.03);
+  pointer-events: none;
+}
+
+.ritual-caption {
+  max-width: 34rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--text-main);
+  position: relative;
+}
+
+/* editorial divider above caption */
+.ritual-caption::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+  margin: 0 auto 2rem;
+}
+
+
+
+/* ===============================
+   RITUAL — MOBILE
+   =============================== */
+
+@media (max-width: 768px) {
+
+  .ritual-media {
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 2.2rem;
+  }
+
+  .ritual-caption {
+    font-size: 0.9rem;
+    line-height: 1.9;
+    padding-inline: 1.5rem;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE HERO — BRAND VISIBILITY FIX
+   ========================================= */
+@media (max-width: 640px) {
+
+  .hero-meta {
+    position: relative;
+    z-index: 2;
+
+    margin-top: -4.5rem;   /* gently pull into hero */
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    text-align: center;
+  }
+
+  .hero-meta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(246, 243, 238, 0.85),
+      rgba(246, 243, 238, 1)
+    );
+    z-index: -1;
+  }
+
+  .brand {
+    font-size: 0.65rem;
+    letter-spacing: 0.34em;
+    opacity: 0.85;
+  }
+
+  .fragrance {
+    font-size: 2.1rem;
+    line-height: 1.15;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    max-width: 90%;
+  }
+}
+

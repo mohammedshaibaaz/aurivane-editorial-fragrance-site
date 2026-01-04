@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aurivane — Éclat Doré</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-inner">
+
+    <!-- LEFT SPACER (keeps brand centered) -->
+    <div></div>
+    <button class="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- CENTER BRAND -->
+    <div class="nav-center-brand">Aurivane</div>
+
+    <!-- DESKTOP NAV (unchanged) -->
+    <nav class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#story">Story</a>
+      <a href="#notes">Notes</a>
+      <a href="#collection">Bottles</a>
+      <a href="#lifestyle">Ritual</a>
+    </nav>
+
+    <!-- MOBILE MENU TOGGLE -->
+    
+
+  </div>
+
+  <!-- MOBILE SLIDE-IN MENU (OUTSIDE nav-inner) -->
+  <nav class="mobile-menu">
+    <a href="#top">Home</a>
+    <a href="#story">Story</a>
+    <a href="#notes">Notes</a>
+    <a href="#collection">Chapters</a>
+    <a href="#lifestyle">Ritual</a>
+  </nav>
+</header>
+
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="brand-mark">Aurivane Parfums</div>
+
+            <h1 class="hero-title">
+              <span class="hero-title-prefix">Aurivane</span>
+              <span class="hero-title-main">Éclat Doré</span>
+            </h1>
+
+            <p class="hero-tagline">
+              A luminous signature that wraps skin in a soft golden glow, moving from sun-warmed citrus
+              to molten florals and a velvet, ambered base—late afternoon light caught on glass,
+              quietly unforgettable.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn"
+                onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+                Enter the world
+              </button>
+            </div>
+
+            <div class="hero-meta">
+              <span>Signature eau de parfum</span>
+              <span>Limited first release</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story" id="story">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">The house of Aurivane</div>
+          <div class="section-kicker">Quiet radiance, distilled</div>
+        </div>
+
+        <div class="brand-grid">
+          <div class="brand-copy">
+            <h2>Where light becomes a signature.</h2>
+            <p>
+              Conceived as an ode to golden hours, <strong>Aurivane Éclat Doré</strong> was born from a fascination with the way light clings to skin, glass, and fabric as day turns to evening.
+              Each accord is composed to feel like a soft, luminous aura rather than a loud declaration.
+            </p>
+            <p>
+              Crafted in small, precise batches, the Aurivane collection blends carefully chosen florals, woods, and musks into fragrances that stay close yet linger in memory.
+              From the first bright top notes to the last trace on a cuff, every transition is designed to feel intentional and seamless.
+            </p>
+            <p>
+              The flacons echo this philosophy—weighty, minimal, and light-washed—serving as quiet objects of desire on the vanity, reflecting the glow of the scent within.
+            </p>
+
+            <div class="brand-footnote">For those who prefer glow over glare.</div>
+          </div>
+
+          <div class="brand-visual">
+            <div class="brand-card">
+              <div class="brand-chip">Origin</div>
+              <p>
+                Aurivane is composed between Grasse and Paris, where artisans work with rare materials to build luminous, long-lasting signatures in intentionally limited quantities.
+              </p>
+            </div>
+            <div class="brand-card">
+              <div class="brand-chip">Craft</div>
+              <p>
+                Each bottle is hand-finished, from brushed metallic accents to delicately frosted glass, mirroring the soft sheen of liquid gold.
+              </p>
+            </div>
+            <div class="brand-card">
+              <div class="brand-chip">Philosophy</div>
+              <p>
+                Fewer fragrances, richer stories: each Aurivane chapter is built to be collected and cherished, not simply worn and replaced.
+              </p>
+            </div>
+            <div class="brand-card">
+              <div class="brand-chip">Edition</div>
+              <p>
+                Éclat Doré debuts as the house’s signature—your introduction to a growing constellation of golden-hued scents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fragrance Notes for Éclat Doré -->
+    <section class="notes" id="notes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">Éclat Doré · The architecture</div>
+          <div class="section-kicker">A golden radiance</div>
+        </div>
+
+        <div class="notes-inner">
+          <div class="notes-pyramid">
+            <div class="note-row">
+              <div>
+                <div class="note-label">Top notes</div>
+                <div class="note-main">Sun-warmed citrus • Sparkling bergamot</div>
+                <div class="note-desc">
+                  A bright, effervescent opening that feels like sunlight breaking across glass and skin.
+                </div>
+              </div>
+              <div class="note-tag">Luminous lift</div>
+            </div>
+            <div class="note-row">
+              <div>
+                <div class="note-label">Heart notes</div>
+                <div class="note-main">Molten florals • White petals</div>
+                <div class="note-desc">
+                  Florals softened to a glow, wrapping close to the body like silk warmed by late afternoon light.
+                </div>
+              </div>
+              <div class="note-tag">Soft bloom</div>
+            </div>
+            <div class="note-row">
+              <div>
+                <div class="note-label">Base notes</div>
+                <div class="note-main">Velvet amber • Creamy woods</div>
+                <div class="note-desc">
+                  A velvet, ambered base that lingers like the last streaks of gold at the edge of the day.
+                </div>
+              </div>
+              <div class="note-tag">Enduring glow</div>
+            </div>
+          </div>
+
+          <div class="notes-bottle">
+            <div class="notes-bottle-inner">
+              <div class="notes-badge">Aurivane · Signature</div>
+              <div class="notes-name">Éclat Doré</div>
+              <div class="notes-sub">Eau de parfum · 50 ml</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection Tease (all models) -->
+    <section class="collection" id="collection">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">The Aurivane constellation</div>
+          <div class="section-kicker">Five chapters of light</div>
+        </div>
+
+        <div class="collection-grid">
+          <!-- Éclat Doré -->
+          <article class="scent-card">
+            <div class="scent-tag">Signature</div>
+            <div class="scent-name">Éclat Doré</div>
+            <p class="scent-notes">
+              A luminous signature that wraps skin in a soft golden glow, moving from sun-warmed citrus to molten florals and a velvet, ambered base—late afternoon light caught on glass, quietly unforgettable.
+            </p>
+            <span class="scent-chip">House hero</span>
+            <div class="scent-cta-row">
+              <a href="eclat-dore.html" class="bottle-link">
+              <span>Discover the glow</span>
+              <span class="scent-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Noctis Veil -->
+          <article class="scent-card">
+            <div class="scent-tag">Night</div>
+            <div class="scent-name">Noctis Veil</div>
+            <p class="scent-notes">
+              Night captured in perfume: a hush of violet and incense over smoked woods and dark vanilla, settling like a silk cloak over the shoulders—intimate, shadowed, made for whispered hours.
+            </p>
+            <span class="scent-chip">After-dark</span>
+
+            <div class="scent-cta-row">
+              <a href="noctis-veil.html" class="bottle-link">
+              <span>Enter the night</span>
+              <span class="scent-arrow">↗</span>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- Lueur Blanche -->
+          <article class="scent-card">
+            <div class="scent-tag">Daylight</div>
+            <div class="scent-name">Lueur Blanche</div>
+            <p class="scent-notes">
+              Milky light in perfume—creamy florals, soft musk, and a breath of cool air.
+              Fresh linen, pale petals, and first light through sheer curtains: pure, serene, quietly luminous.
+            </p>
+            <span class="scent-chip">Morning veil</span>
+
+            <div class="scent-cta-row">
+              <a href="lueur-blanche.html" class="bottle-link">
+              <span>Embrace the light</span>
+              <span class="scent-arrow">↗</span>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- Rose Silencieuse -->
+          <article class="scent-card">
+            <div class="scent-tag">Intimate</div>
+            <div class="scent-name">Rose Silencieuse</div>
+            <p class="scent-notes">
+              A rose that never raises its voice: petals steeped in tea, brushed suede, and a trace of smoke, clinging to cuffs and collars like a memory—classic rose turned into a whisper.
+            </p>
+            <span class="scent-chip">Quiet rose</span>
+            
+            <div class="scent-cta-row">
+              <a href="rose-silencieuse.html" class="bottle-link">
+              <span>Hear the whisper</span>
+              <span class="scent-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Ciel d’Opaline -->
+          <article class="scent-card">
+            <div class="scent-tag">Ethereal</div>
+            <div class="scent-name">Ciel d’Opaline</div>
+            <p class="scent-notes">
+              Floating between earth and sky, airy iris, pearled musk, and soft mineral warmth evoke an opaline sky before dusk—diffuse, iridescent, impossible to fully pin down.
+            </p>
+            <span class="scent-chip">Iridescent</span>
+            <div class="scent-cta-row">
+              <a href="ciel-d-opaline.html" class="bottle-link">
+              <span>Chase the shimmer</span>
+              <span class="scent-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lifestyle / Video -->
+    <section class="lifestyle" id="lifestyle">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">Scenes from Aurivane</div>
+          <div class="section-kicker">Lived in light and shadow</div>
+        </div>
+
+        <div class="lifestyle-grid">
+          <div class="lifestyle-media">
+            <div class="lifestyle-main">
+              <!-- Replace this with your own muted hero video or image -->
+               <video
+  class="ritual-video"
+  src="ritual.mp4"
+  autoplay
+  muted
+  loop
+  playsinline
+></video>
+
+            </div>
+            <div class="lifestyle-subgrid">
+              <div class="lifestyle-card">
+                Éclat Doré resting on sun-warmed marble, framed by cut crystal and silk drapery, ready for the first radiant spritz of the evening.
+              </div>
+              <div class="lifestyle-card">
+                Noctis Veil and Rose Silencieuse catching candlelight on a crowded table—scent as the last detail before disappearing into the night.
+              </div>
+            </div>
+          </div>
+          <div class="lifestyle-copy">
+            <h2>Fragrances remembered by aura, not by volume.</h2>
+            <p>
+              The Aurivane collection is built for lives lived between light and shadow—morning rituals in Lueur Blanche, golden hours in Éclat Doré, velvet nights wrapped in Noctis Veil.
+            </p>
+            <p>
+              Each chapter is a different facet of the same glow, clinging softly to skin, fabric, and memory long after the moment has passed.
+            </p>
+            <div class="lifestyle-caption">Scent the moments that matter.</div>
+          </div>
+          <div class="lifestyle-caption">Worn as a ritual, remembered as a trace.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof & CTA -->
+    <section class="social-proof" id="social">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">Whispers from the first wearers</div>
+          <div class="section-kicker">Before Aurivane opens its doors</div>
+        </div>
+
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <p class="quote-text">
+              Éclat Doré feels like wearing light—people notice something, but they can’t name it. It’s all aura, no noise.
+            </p>
+            <div class="quote-author">Private client · Paris</div>
+          </div>
+          <div class="quote-card">
+            <p class="quote-text">
+              Noctis Veil is the scent I reach for when the evening has no fixed end time—silk, shadow, and a little danger.
+            </p>
+            <div class="quote-author">Creative director · Milan</div>
+          </div>
+          <div class="quote-card">
+            <p class="quote-text">
+              Lueur Blanche makes morning routines feel cinematic; Rose Silencieuse and Ciel d’Opaline stay on my cuffs for days.
+            </p>
+            <div class="quote-author">Early wearer · New York</div>
+          </div>
+        </div>
+
+        <div class="cta-panel" id="waitlist">
+          <div class="cta-copy">
+            <h2>Join the Aurivane list</h2>
+            <p>
+              Be among the first to experience Éclat Doré and its companion chapters—Noctis Veil, Lueur Blanche, Rose Silencieuse, and Ciel d’Opaline.
+              A limited number of first-edition flacons will be offered exclusively to this list.
+            </p>
+          </div>
+          <form class="cta-form"
+            onsubmit="event.preventDefault(); alert('Thank you for joining the Aurivane list.');">
+            <input type="email" required class="cta-input" placeholder="Your email address" />
+            <button class="btn" type="submit">Notify me first</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-whisper">
+  Aurivane — composed in light, worn in silence.
+</div>
+
+<section class="chapters-index">
+
+  <div class="chapters-header">
+    <span class="label">The Chapters</span>
+  </div>
+
+  <div class="chapters-list">
+
+    <a href="eclat-dore.html" class="chapter-link">
+      <span class="chapter-number">I</span>
+      <span class="chapter-name">Éclat Doré</span>
+    </a>
+
+    <a href="noctis-veil.html" class="chapter-link">
+      <span class="chapter-number">II</span>
+      <span class="chapter-name">Noctis Veil</span>
+    </a>
+
+    <a href="lueur-blanche.html" class="chapter-link">
+      <span class="chapter-number">III</span>
+      <span class="chapter-name">Lueur Blanche</span>
+    </a>
+
+    <a href="rose-silencieuse.html" class="chapter-link">
+      <span class="chapter-number">IV</span>
+      <span class="chapter-name">Rose Silencieuse</span>
+    </a>
+
+    <a href="ciel-d-opaline.html" class="chapter-link">
+      <span class="chapter-number">V</span>
+      <span class="chapter-name">Ciel d’Opaline</span>
+    </a>
+
+  </div>
+
+</section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">Aurivane Parfums</div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="Pinterest">PI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+  // Toggle menu open / close
+  menuToggle.addEventListener('click', () => {
+    document.body.classList.toggle('menu-open');
+  });
+
+  // Close menu when a link is clicked
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
+
+</body>
+</html>
