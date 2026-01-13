@@ -175,14 +175,81 @@
   console.log('%cWebsite crafted with attention to detail', 'font-size: 12px; color: #7a6f66;');
 
   // ====================================
-  // NEWSLETTER FORM HANDLING (WEB3FORMS)
+  // NEWSLETTER FORM VALIDATION & HANDLING
   // ====================================
   const newsletterForm = document.getElementById('newsletter-form');
+  const newsletterEmail = document.getElementById('newsletter-email');
+  const newsletterEmailError = document.getElementById('newsletter-email-error');
   const newsletterMessage = document.getElementById('newsletter-message');
+
+  // Email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Validate email function
+  function validateEmail(email) {
+    return emailRegex.test(email.trim());
+  }
+
+  // Show email error
+  function showEmailError(message) {
+    if (newsletterEmailError) {
+      newsletterEmailError.textContent = message;
+      newsletterEmailError.classList.add('show');
+    }
+    if (newsletterEmail) {
+      newsletterEmail.classList.add('error');
+    }
+  }
+
+  // Clear email error
+  function clearEmailError() {
+    if (newsletterEmailError) {
+      newsletterEmailError.textContent = '';
+      newsletterEmailError.classList.remove('show');
+    }
+    if (newsletterEmail) {
+      newsletterEmail.classList.remove('error');
+    }
+  }
+
+  // Real-time validation on input
+  if (newsletterEmail) {
+    newsletterEmail.addEventListener('input', function() {
+      if (this.value.trim() === '') {
+        clearEmailError();
+      } else if (validateEmail(this.value)) {
+        clearEmailError();
+      }
+    });
+
+    // Validate on blur
+    newsletterEmail.addEventListener('blur', function() {
+      if (this.value.trim() === '') {
+        // Empty is okay on blur, will validate on submit
+        clearEmailError();
+      } else if (!validateEmail(this.value)) {
+        showEmailError('Please enter a valid email address');
+      }
+    });
+  }
 
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', async function(e) {
       e.preventDefault();
+
+      // Validate email before submission
+      const email = newsletterEmail.value.trim();
+      if (!email) {
+        showEmailError('Email address is required');
+        newsletterEmail.focus();
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        showEmailError('Please enter a valid email address');
+        newsletterEmail.focus();
+        return;
+      }
 
       // Check if user already subscribed
       if (localStorage.getItem('aurivane_subscribed') === 'true') {
@@ -190,6 +257,7 @@
         return;
       }
 
+      clearEmailError();
       const formData = new FormData(newsletterForm);
       const submitButton = newsletterForm.querySelector('button[type="submit"]');
       const originalText = submitButton.textContent;
@@ -213,6 +281,7 @@
           
           showMessage(newsletterMessage, 'Thank you for subscribing to Aurivane\'s scent journey ✨', 'success');
           newsletterForm.reset();
+          clearEmailError();
 
           // Track conversion in GA4
           if (typeof gtag !== 'undefined') {

@@ -471,20 +471,22 @@
               A limited number of first-edition flacons will be offered exclusively to this list.
             </p>
           </div>
-          <form class="cta-form" id="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+          <form class="cta-form" id="newsletter-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
             <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
             <input type="hidden" name="subject" value="New Aurivane Newsletter Subscription">
             <input type="hidden" name="from_name" value="Aurivane Newsletter">
-            <label for="newsletter-email" class="visually-hidden">Email address</label>
-            <input 
-              type="email" 
-              id="newsletter-email"
-              name="email" 
-              required 
-              class="cta-input" 
-              placeholder="Your email address"
-              aria-required="true" />
-            <button class="btn" type="submit">Subscribe to newsletter</button>
+            <div class="form-group">
+              <label for="newsletter-email">Email address</label>
+              <input 
+                type="text" 
+                id="newsletter-email"
+                name="email" 
+                class="cta-input" 
+                placeholder="your@email.com"
+                autocomplete="email" />
+              <span class="form-error" id="newsletter-email-error"></span>
+            </div>
+            <button class="btn" type="submit">Subscribe</button>
           </form>
           <div id="newsletter-message" class="form-message" role="alert" aria-live="polite"></div>
         </div>
