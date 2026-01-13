@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ciel d’Opaline — Aurivane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="aurivane-chapter.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+
+<style>
+  /* ===============================
+   MOBILE HERO IMAGE (LUXURY)
+   =============================== *//* ===============================
+   MOBILE HERO IMAGE (LUXURY)
+   =============================== */
+/* =========================================
+   MOBILE HERO — IMAGE SWITCH (CHAPTERS)
+   ========================================= */
+@media (max-width: 640px) {
+
+  /* Hide the <img> on mobile */
+  .hero-media {
+    display: none;
+  }
+
+  /* Use background image instead */
+  .hero {
+    background-image: url("images/ciel-mobile.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    height: 80vh;
+    min-height: 520px;
+  }
+
+}
+
+img.hero-media {
+  height: 83%;
+  padding-bottom: 0;
+  
+}
+
+</style>
+
+</head>
+
+<body data-mood="opaline">
+
+  <section class="hero">
+  <img 
+    src="images/ciel-hero.png" 
+    alt="Aurivane — ciel d’Opaline" 
+    class="hero-media"
+  />
+</section>
+
+<div class="hero-divider"></div>
+
+  <section class="hero-meta">
+    <div class="brand">Aurivane</div>
+    <h1 class="fragrance">Ciel d’Opaline</h1>
+    <p class="tagline">Light refracted through quiet skies.</p>
+  </section>
+
+  <section class="section narrative">
+    <p>
+      Ciel d’Opaline exists between states — neither day nor night.
+    </p>
+    <p>
+      It feels mineral, expansive, and hushed, like light diffused through
+      clouded glass.
+    </p>
+    <p>
+      A fragrance that lingers not in form, but in atmosphere.
+    </p>
+  </section>
+
+  <section class="section architecture">
+    <h3>Olfactive Architecture</h3>
+    <div class="note"><span>Top</span>Pale air, mineral clarity</div>
+    <div class="note"><span>Heart</span>Transparent florals, weightless</div>
+    <div class="note"><span>Base</span>Stone-soft woods, enduring</div>
+  </section>
+
+  <section class="section section--tight">
+   <div class="ritual-media">
+  <video autoplay muted loop playsinline>
+    <source src="images/ciel-ritual.mp4" type="video/mp4" />
+  </video>
+</div>
+ <p class="ritual-caption">A horizon held in stillness.</p>
+  </section>
+
+  <nav class="chapter-nav">
+    <a href="rose-silencieuse.html">← Previous chapter</a>
+    <a href="index.html">Return to constellation</a>
+    <span></span>
+  </nav>
+
+</body>
+</html>
